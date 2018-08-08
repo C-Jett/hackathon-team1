@@ -32,7 +32,14 @@ function SingleIndicatorsPage({ match }) {
         <Table
           columns={columns}
           dataSource={data}
-          pagination={false}/>
+          pagination={false}
+          onRow={(record) => {
+            const path = record.neighborhood.toLowerCase().replace(' ', '-');
+            return {
+              onClick: () => window.location = `/#/neighborhood/${path}`
+            };
+          }}
+        />
       </div>
     </AppLayout>
   );
