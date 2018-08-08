@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'dva';
 import { Layout } from 'antd';
-import AppLayout from '../components/AppLayout';
 import { Table  } from 'antd';
+import AppLayout from '../components/AppLayout';
 import indicatorsData from '../models/indicators';
 
 const columns = [{
