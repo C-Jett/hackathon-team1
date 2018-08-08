@@ -1,0 +1,44 @@
+.header {
+  background: #1D2E4D;
+  background-image: url(../assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: 10% top;
+}
+
+.header__h1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/hcat.png);
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: center;
+}
+
+.madeWith {
+  text-align: center;
+  font-size: 16px;
+}
+
+.uab {
+  width: 100%;
+  height: 50px;
+  background-image: url(../assets/uab.png);
+  background-repeat: no-repeat;
+  background-size: 50px auto;
+  background-position: center;
+}
+
+.plus {
+  text-align: center;
+  font-size: 24px;
+}
+
+.bbva {
+  width: 100%;
+  height: 50px;
+  background-image: url(../assets/bbva.png);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: center;
+}
