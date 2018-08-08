@@ -24,3 +24,7 @@
 .cell-tier-middle {
   background: yellow;
 }
+
+.table-rank th span {
+  font-size: 10px
+}

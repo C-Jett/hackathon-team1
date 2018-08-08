@@ -16,6 +16,7 @@ const columns = [{
   title: 'Rank',
   dataIndex: 'rank',
   key: 'rank',
+  className: 'table-rank'
 }];
 
 function SingleIndicatorsPage({ match }) {
