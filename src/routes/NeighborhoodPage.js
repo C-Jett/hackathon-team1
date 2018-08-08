@@ -2,15 +2,15 @@ import React from 'react';
 import { connect } from 'dva';
 import AppLayout from '../components/AppLayout';
 
-function IndexPage() {
+function NeighborhoodPage() {
   return (
     <AppLayout>
-      IndexPage
+      NeighborhoodPage
     </AppLayout>
   );
 }
 
-IndexPage.propTypes = {
+NeighborhoodPage.propTypes = {
 };
 
-export default connect()(IndexPage);
+export default connect()(NeighborhoodPage);
