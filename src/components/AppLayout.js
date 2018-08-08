@@ -8,7 +8,7 @@ const Footer = Layout.Footer;
 export default ({ header, footer, children}) => {
   return (
     <Layout>
-      <Header className={styles.header}>
+      <Header onClick={() => window.location = '/#/'} className={styles.header}>
         <h1 className={styles.header__h1}></h1>
       </Header>
       <Layout>
