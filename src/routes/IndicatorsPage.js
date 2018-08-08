@@ -9,10 +9,12 @@ const columns = [{
   title: 'Indicators',
   dataIndex: 'indicator',
   key: 'indicator',
-}, {
-  title: 'Short Description',
-  dataIndex: 'description',
-  key: 'description',
+  render: (indicator, item) => (
+    <div>
+      <strong>{indicator}</strong>
+      <p>{item.description}</p>
+    </div>
+  )
 }];
 
 const data = indicatorsData.map((item, key) => {
@@ -24,7 +26,10 @@ function IndicatorsPage() {
     <AppLayout>
       <Layout.Header>HCI Domains and Indicators</Layout.Header>
       <div>
-        <Table columns={columns} dataSource={data} />
+        <Table
+          columns={columns}
+          dataSource={data}
+          pagination={false}/>
       </div>
     </AppLayout>
   );
