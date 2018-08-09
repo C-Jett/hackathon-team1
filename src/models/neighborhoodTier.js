@@ -77,5 +77,4 @@ export default [
     rank: 18,
     tier: 'bottom'
   },
-
 ]

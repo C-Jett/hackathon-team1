@@ -17,11 +17,17 @@ function IndexPage(props, context) {
           <Button href="/#/neighborhood" className={styles.button} type="primary" block>Neighborhoods</Button>
         </Col>
       </Row>
-      <Row>
+      <Row style={{marginBottom: 10}}>
         <Col span={24}>
           <Button href="/#/indicators" className={styles.button} type="primary" block>Indicators</Button>
         </Col>
       </Row>
+      <Row>
+        <Col span={24}>
+          <Button href="/#/search" className={styles.button} type="primary" block>Search Neighborhoods</Button>
+        </Col>
+      </Row>
+
       <br />
       <hr />
       <p>
