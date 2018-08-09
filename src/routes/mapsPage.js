@@ -10,7 +10,7 @@ const opts = {
     lat: 33.5186,
     lng: -86.8104,
   },
-    zoom:14
+    zoom:12
   };
 
   function mapsPage(props, context) {
