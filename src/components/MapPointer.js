@@ -22,9 +22,11 @@ const IconText = ({ path, type, text }) => (
 function MapPointer({ neighborhood }) {
   const path = neighborhood.toLowerCase().replace(' ', '-');
   return (
-    <IconText key={neighborhood} type="environment" text={neighborhood}
-      path={path}
-    />
+    <div key={neighborhood} style={{ width: 200 }}>
+      <IconText key={neighborhood} type="environment" text={neighborhood}
+        path={path}
+      />
+    </div>
   );
 };
 

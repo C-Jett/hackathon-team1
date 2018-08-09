@@ -55,10 +55,10 @@ function SingleNeighborhoodPage({ match }) {
     <AppLayout>
 
       <NavButtons
+        title={ neighborhoodName }
         backPath={[ `neighborhood/${match.params.neighborhood}` ]}
       />
 
-      <Layout.Header className={styles.subheader}>{neighborhoodName}</Layout.Header>
       <Chart height={window.innerWidth-20} data={dv} padding={[20, 20, 20, 20 ]} scale={cols} forceFit>
           <Coord type="polar" radius={0.5} />
           <Axis name="item" line={null} tickLine={null} grid={{lineStyle: {

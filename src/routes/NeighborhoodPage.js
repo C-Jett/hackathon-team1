@@ -39,12 +39,9 @@ function NeighborhoodPage() {
     <AppLayout>
 
       <NavButtons
+        title="Neighborhood Ranking"
         backPath={[ '' ]}
       />
-
-      <Layout.Header className={styles.subheader}>
-        Neighborhood Ranking
-      </Layout.Header>
 
       <Table
         columns={columns}
