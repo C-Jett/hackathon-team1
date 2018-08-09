@@ -31,7 +31,7 @@ function SingleNeighborhoodPage({ match }) {
       const { indicators, value } = domainGroups[domain];
       return {
         item: domain,
-        neighborhood: value / indicators
+        "Domain Rank": value / indicators
       };
     });
     console.log(data);
@@ -39,7 +39,7 @@ function SingleNeighborhoodPage({ match }) {
     const dv = new DataView().source(data);
         dv.transform({
           type: 'fold',
-          fields: [ 'neighborhood' ],
+          fields: [ "Domain Rank" ],
           key: 'user',
           value: 'score',
         });
