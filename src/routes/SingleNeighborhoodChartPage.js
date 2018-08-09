@@ -30,7 +30,7 @@ function SingleNeighborhoodPage({ match }) {
     const data = Object.keys(domainGroups).map(domain => {
       const { indicators, value } = domainGroups[domain];
       return {
-        item: domain,
+        item: domain.substr(0, 10) + (domain.length > 10 ? '…' : ''),
         "Domain Rank": value / indicators
       };
     });
@@ -74,7 +74,7 @@ function SingleNeighborhoodPage({ match }) {
           <Legend name="user" marker="circle" offset={30}/>
           <Geom type='area' position="item*score" color="user" />
           <Geom type='line' position="item*score" color="user" size={2}/>
-          <Geom type='point' position="item*score" color="user" shape="circle" size={4} style={{stroke: '#fff',
+          <Geom type='point' position="item*score" color="user" shape="circle" size={2} style={{stroke: '#fff',
           lineWidth: 1,
           fillOpacity: 1}} />
         </Chart>
