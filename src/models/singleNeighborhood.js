@@ -1,16 +1,22 @@
 export default [
   {
-    indicator: 'Airport Highlands (15.5%)',
-    domain: 'Primary Domain: Blight',
-    rank: 1
+    indicator: 'Airport Highlands',
+    domain: 'Blight',
+    value: 5.9,
+    rank: 1,
+    tier: 'top'
   },
   {
     indicator: 'Airport Highlands',
-    domain: 'bottom',
-    rank: 1
+    domain: 'Blight',
+    value: 5.9,
+    rank: 1,
+    tier: 'middle'
   },
   {
     indicator: 'Airport Highlands',
-    domain: 'bottom',
-    rank: 1
+    domain: 'Blight',
+    value: 5.9,
+    rank: 1,
+    tier: 'bottom'
   }]
