@@ -25,7 +25,7 @@ const opts = {
           {
             data.map(({ neighborhood, geolocation }) => {
               if (!geolocation || !geolocation.length) return null;
-              return ( <MapPointer lat={geolocation[0]} lng={geolocation[1]} neighborhood={neighborhood} /> );
+              return ( <MapPointer style={{width: 'auto'}} lat={geolocation[0]} lng={geolocation[1]} neighborhood={neighborhood} /> );
             })
           }
 
