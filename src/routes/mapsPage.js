@@ -3,7 +3,7 @@ import { connect } from 'dva';
 import GoogleMapReact from 'google-map-react';
 import data from '../models/neighborhoodTier';
 import MapPointer from '../components/MapPointer';
-import neighborhoodTier from '../models/neighborhoodTier';
+import NavButtons from '../components/NavButtons';
 
 const opts = {
   center: {
@@ -16,6 +16,16 @@ const opts = {
   function mapsPage(props, context) {
     return (
       <div style={{ height: '100vh', width: '100%' }}>
+        <NavButtons
+          backOnly={true}
+          backPath={['']}
+          style={{
+            position: 'absolute',
+            top: 20,
+            left: 20,
+            zIndex: 10000
+          }}
+        />
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyDmM3HqFBnUtlLvemt4jW2AzcswlgmqEZY' }}
           defaultCenter={opts.center}
@@ -25,7 +35,7 @@ const opts = {
           {
             data.map(({ neighborhood, geolocation }) => {
               if (!geolocation || !geolocation.length) return null;
-              return ( <MapPointer style={{width: 'auto'}} lat={geolocation[0]} lng={geolocation[1]} neighborhood={neighborhood} /> );
+              return ( <MapPointer key={neighborhood.neighborhood} lat={geolocation[0]} lng={geolocation[1]} neighborhood={neighborhood} /> );
             })
           }
 

@@ -31,10 +31,10 @@ function SingleIndicatorsPage({ match }) {
     <AppLayout>
 
       <NavButtons
+        title={indicatorName}
         backPath={[ 'indicators' ]}
       />
 
-      <Layout.Header className={styles.subheader}>{indicatorName}</Layout.Header>
       <div>
         <Table
           columns={columns}

@@ -28,9 +28,9 @@ function IndicatorsPage() {
   return (
     <AppLayout>
       <NavButtons
+        title="HCI Domains and Indicators"
         backPath={[ '' ]}
       />
-      <Layout.Header className={styles.subheader}>HCI Domains and Indicators</Layout.Header>
       <div>
         <Table
           columns={columns}

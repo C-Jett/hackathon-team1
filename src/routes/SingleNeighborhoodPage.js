@@ -42,14 +42,12 @@ function SingleNeighborhoodPage({ match }) {
     <AppLayout>
 
       <NavButtons
+        title={neighborhoodName}
         backPath={['neighborhood']}
         forwardPath={`${window.location}/chart`}
         forwardIcon='line-chart'
       />
 
-      <Layout.Header className={styles.subheader}>
-        {neighborhoodName}
-      </Layout.Header>
       <List
         dataSource={data}
         renderItem={({indicator, domain, rank, tier, value}) => {
