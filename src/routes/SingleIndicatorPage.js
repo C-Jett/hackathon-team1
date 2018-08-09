@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Layout, Table  } from 'antd';
-import styles from './styles.css';
+import { Icon, Table  } from 'antd';
 import AppLayout from '../components/AppLayout';
 import data from '../models/SingleIndicatorTier';
 import NavButtons from '../components/NavButtons';
@@ -11,11 +10,11 @@ const columns = [{
   dataIndex: 'neighborhood',
   key: 'neighborhood'
 }, {
-  title: 'Indicator Value',
+  title: 'Value',
   dataIndex: 'value',
   key: 'value',
 }, {
-  title: 'Rank',
+  title: (<Icon type="trophy" />),
   dataIndex: 'rank',
   key: 'rank',
   className: 'table-rank'
