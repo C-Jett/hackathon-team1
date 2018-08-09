@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Table  } from 'antd';
+import { Layout, Table  } from 'antd';
+import styles from './styles.css';
 import AppLayout from '../components/AppLayout';
 import data from '../models/SingleIndicatorTier';
+import NavButtons from '../components/NavButtons';
 
 const columns = [{
   title: 'Neighborhood',
@@ -27,7 +29,12 @@ function SingleIndicatorsPage({ match }) {
 
   return (
     <AppLayout>
-      <h2>{indicatorName}</h2>
+
+      <NavButtons
+        backPath={[ 'indicators' ]}
+      />
+
+      <Layout.Header className={styles.subheader}>{indicatorName}</Layout.Header>
       <div>
         <Table
           columns={columns}

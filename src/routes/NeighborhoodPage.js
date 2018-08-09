@@ -4,6 +4,7 @@ import { Icon, Layout, Table } from 'antd';
 import styles from './styles.css';
 import AppLayout from '../components/AppLayout';
 import data from '../models/neighborhoodTier';
+import NavButtons from '../components/NavButtons';
 
 
 const columns = [{
@@ -36,6 +37,11 @@ const columns = [{
 function NeighborhoodPage() {
   return (
     <AppLayout>
+
+      <NavButtons
+        backPath={[ '' ]}
+      />
+
       <Layout.Header className={styles.subheader}>
         Neighborhood Ranking
       </Layout.Header>

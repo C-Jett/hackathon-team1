@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Icon, Table, Layout } from 'antd';
+import { Table, Layout } from 'antd';
 import styles from './styles.css';
 import AppLayout from '../components/AppLayout';
 import indicatorsData from '../models/indicators';
+import NavButtons from '../components/NavButtons';
 
 const columns = [{
   title: 'Indicators',
@@ -26,6 +27,9 @@ const data = indicatorsData.map((item, key) => {
 function IndicatorsPage() {
   return (
     <AppLayout>
+      <NavButtons
+        backPath={[ '' ]}
+      />
       <Layout.Header className={styles.subheader}>HCI Domains and Indicators</Layout.Header>
       <div>
         <Table

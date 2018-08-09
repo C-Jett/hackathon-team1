@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'dva';
 import AppLayout from '../components/AppLayout';
-import { Layout } from '../../node_modules/antd';
-import { List , Avatar, IconText} from 'antd';
+import { Layout } from 'antd';
+import NavButtons from '../components/NavButtons';
 import indicators from '../models/indicators';
 import styles from './styles.css';
-import { Chart, Geom, Axis, Tooltip, Coord, Label, Legend, View, Guide, Shape } from 'bizcharts';
+import { Chart, Geom, Axis, Tooltip, Coord, Legend } from 'bizcharts';
 import DataSet from '@antv/data-set';
 
 function SingleNeighborhoodPage({ match }) {
@@ -53,6 +53,10 @@ function SingleNeighborhoodPage({ match }) {
 
   return (
     <AppLayout>
+
+      <NavButtons
+        backPath={[ `neighborhood/${match.params.neighborhood}` ]}
+      />
 
       <Layout.Header className={styles.subheader}>{neighborhoodName}</Layout.Header>
       <Chart height={window.innerWidth-20} data={dv} padding={[20, 20, 20, 20 ]} scale={cols} forceFit>
