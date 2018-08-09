@@ -7,8 +7,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@antv/data-set": "^0.9.0",
+    "@antv/g2": "^3.2.6",
     "antd": "^3.8.0",
     "babel-plugin-import": "^1.8.0",
+    "bizcharts": "^3.2.1-beta.2",
     "dva": "^2.3.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
