@@ -5,7 +5,7 @@ import NeighborhoodPage from './routes/NeighborhoodPage';
 import IndicatorsPage from './routes/IndicatorsPage';
 import SingleNeighborhoodPage from './routes/SingleNeighborhoodPage';
 import SingleIndicatorPage from './routes/SingleIndicatorPage';
-
+import mapsPage from './routes/mapsPage';
 
 function RouterConfig({ history }) {
   return (
@@ -16,6 +16,7 @@ function RouterConfig({ history }) {
         <Route path="/neighborhood/:neighborhood" exact component={SingleNeighborhoodPage} />
         <Route path="/indicators" exact component={IndicatorsPage} />
         <Route path="/indicators/:indicator" exact component={SingleIndicatorPage} />
+        <Route path="/search" exact component={mapsPage} />
       </Switch>
     </Router>
   );
