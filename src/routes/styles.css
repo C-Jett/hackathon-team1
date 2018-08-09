@@ -14,17 +14,32 @@
   padding: 5px;
 }
 .cell-tier-top {
-  background: green;
+  background: #A0D852;
 }
 
 .cell-tier-bottom {
-  background: red;
+  background: #F2705B;
 }
 
 .cell-tier-middle {
-  background: yellow;
+  background: #FFD949;
+}
+.tier-top {
+  color: #A0D852;
+}
+
+.tier-bottom {
+  color: #F2705B;
+}
+
+.tier-middle {
+  color: #FFD949;
 }
 
 .table-rank th span {
   font-size: 10px
+}
+
+.neighborhoodMeta {
+  text-align: center;
 }
